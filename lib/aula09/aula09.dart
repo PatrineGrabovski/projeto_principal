@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:projeto_principal/aula08/aula08.dart';
 import 'package:projeto_principal/aula09/view/aula09_dashboard.dart';
 import 'package:projeto_principal/aula09/view/aula09_disciplinas.dart';
 

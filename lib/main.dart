@@ -2,13 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:projeto_principal/aula08/aula08.dart';
 import 'package:projeto_principal/aula10/aula10.dart';
 import 'package:projeto_principal/aula10/view/aula10_future.dart';
+import 'package:projeto_principal/aula12/model/carrinho_model.dart';
+import 'package:projeto_principal/aula12/view/cardapio_view.dart';
+import 'package:projeto_principal/aula12/view/pedido.view.dart';
+import 'package:provider/provider.dart';
 
 import 'aula09/aula09.dart';
 import 'aula09/view/aula09_dashboard.dart';
 import 'aula09/view/aula09_disciplinas.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => CarrinhoModel(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -22,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      initialRoute: '/aula10_future',
+      initialRoute: '/cardapio',
       routes: {
         '/': (context) => const Aula08(),
         '/aula09': (context) => const Aula09(),
@@ -30,6 +37,8 @@ class MyApp extends StatelessWidget {
         '/aula09_disciplinas': (context) => const Aula09Disciplinas(),
         '/aula10': (context) => const Aula10(),
         '/aula10_future': (context) => const Aula10Future(),
+        '/cardapio': (context) => const CardapioView(),
+        '/pedido': (context) => const PedidoView(),
       },
     );
   }

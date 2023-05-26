@@ -1,10 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:projeto_principal/aula08/widgets/login_text_field.dart';
 import 'package:projeto_principal/aula08/widgets/tipo_login.dart';
-import 'package:projeto_principal/aula09/aula09.dart';
 
 import 'classes/login_details.dart';
 
